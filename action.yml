@@ -11,6 +11,9 @@ inputs:
     certificate-ttl:
         description: Specify the length that the generated credentials should be valid for. Defaults to "1h"
         required: false
+    disable-env-vars:
+        description: Disables the automatic setting of environment variables like`TELEPORT_IDENTITY_FILE` by the action. This can be useful in more complex workflows where multiple identities are being used.
+        required: false
     kubernetes-cluster:
         description: Specify the name of the Kubernetes cluster in Teleport you wish to connect to.
         required: true
